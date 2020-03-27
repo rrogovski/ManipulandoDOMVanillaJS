@@ -11,7 +11,7 @@ buttonElement.onclick = ev => {
     textElement.innerHTML = inputElement.value;
 
     const btnElement = document.createElement("button");
-    btnElement.innerHTML = '<i class="material-icons">delete_outline</i>';
+    btnElement.innerHTML = '<i class="fas fa-minus-circle"></i>';
 
     const liElement = document.createElement("li");
     liElement.appendChild(textElement);

@@ -1,17 +1,15 @@
 /*
-
 bg 001719
 text 015E66
 hover 02272B
 bt 001E21
 border 004046
-
 https://paletton.com/#uid=73k1c0kJS6KvW5fuP8MNdeqCnl7
-
 */
 
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css');
 
 * {
   font-family: Roboto, sans-serif;
@@ -50,11 +48,11 @@ input:focus, input:hover {
   border: 1px solid #02272B;
 }
 
-button {
+form button {
   background: #001E21;
   margin: 5px;
-  padding: 4px 8px;
-  font-size: 16px;
+  padding: 8px 16px;
+  font-size: 20px;
   border: 0;
   border-radius: 5px;
   transition: background 0.5s;
@@ -64,4 +62,11 @@ button {
 button:hover {
   background: #02272B;
   transform: scale(1.1);
+}
+
+#tarefas button {
+  background: transparent;
+  font-size: 14px;
+  border: 0;
+  text-transform: uppercase;
 }
