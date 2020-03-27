@@ -1,0 +1,65 @@
+/*
+
+bg 001719
+text 015E66
+hover 02272B
+bt 001E21
+border 004046
+
+https://paletton.com/#uid=73k1c0kJS6KvW5fuP8MNdeqCnl7
+
+*/
+
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+* {
+  font-family: Roboto, sans-serif;
+  color: #015E66;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #001719;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2 {
+  text-transform: uppercase;
+}
+
+#app {
+  padding: 25px;
+}
+
+input {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #004046;
+  background: #004046;
+  border-radius: 5px;
+  width: 300px;
+  vertical-align: bottom
+}
+
+input:focus, input:hover {
+  border: 1px solid #02272B;
+}
+
+button {
+  background: #001E21;
+  margin: 5px;
+  padding: 4px;
+  border: 0;
+  border-radius: 5px;
+  transition: background 0.5s;
+  transition: transform 0.5s;
+}
+
+button:hover {
+  background: #02272B;
+  transform: scale(1.1);
+}
