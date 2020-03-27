@@ -16,15 +16,15 @@ https://paletton.com/#uid=73k1c0kJS6KvW5fuP8MNdeqCnl7
 * {
   font-family: Roboto, sans-serif;
   color: #015E66;
-  margin: 0;
-  padding: 0;
-  outline: 0;
-  box-sizing: border-box;
 }
 
 body {
   background: #001719;
   -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
 }
 
 h1, h2 {
@@ -37,12 +37,13 @@ h1, h2 {
 
 input {
   padding: 8px;
-  font-size: 14px;
+  font-size: 16px;
+  color: #86ebc4;
   border: 1px solid #004046;
   background: #004046;
   border-radius: 5px;
   width: 300px;
-  vertical-align: bottom
+  /* vertical-align: bottom */
 }
 
 input:focus, input:hover {
@@ -52,7 +53,8 @@ input:focus, input:hover {
 button {
   background: #001E21;
   margin: 5px;
-  padding: 4px;
+  padding: 4px 8px;
+  font-size: 16px;
   border: 0;
   border-radius: 5px;
   transition: background 0.5s;
