@@ -5,19 +5,28 @@ hover 02272B
 bt 001E21
 border 004046
 https://paletton.com/#uid=73k1c0kJS6KvW5fuP8MNdeqCnl7
+
+https://tableless.com.br/como-usar-variaveis-no-css-de-forma-nativa/
 */
 
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css');
 
+:root {
+  --cor-primaria: #56642A;
+  --cor-primaria-hover : #92A332;
+  --cor-primaria-contraste: #849531;
+  --cor-texto: #ccc;
+}
+
 * {
   font-family: Roboto, sans-serif;
-  color: #015E66;
+  color: var(--cor-texto));
 }
 
 body {
-  background: #001719;
+  background: var(--cor-primaria);
   -webkit-font-smoothing: antialiased;
   margin: 0;
   padding: 0;
@@ -29,27 +38,34 @@ h1, h2 {
   text-transform: uppercase;
 }
 
-#app {
-  padding: 25px;
+#app {  
+  /* max-width: 1200px; */
+  /* width: 50%; */
+  margin: 0 auto;
+  padding: 60px 30px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 input {
   padding: 8px;
   font-size: 16px;
-  color: #86ebc4;
-  border: 1px solid #004046;
-  background: #004046;
+  color: var(--cor-texto);
+  border: 1px solid var(--cor-primaria-contraste);
+  background: #var(var(--cor-primaria));
   border-radius: 5px;
   width: 300px;
   /* vertical-align: bottom */
 }
 
 input:focus, input:hover {
-  border: 1px solid #02272B;
+  border: 1px solid var(--cor-primaria-hover);
 }
 
 form button {
-  background: #001E21;
+  background: var(--cor-primaria-contraste);
   margin: 5px;
   padding: 8px 16px;
   font-size: 20px;
@@ -60,7 +76,7 @@ form button {
 }
 
 button:hover {
-  background: #02272B;
+  background: var(--cor-primaria-hover);
   transform: scale(1.1);
 }
 
